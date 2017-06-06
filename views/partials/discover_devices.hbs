@@ -1,0 +1,12 @@
+<ul class="list-group">
+  {{#each devices}}
+    <a href="/bravia/add/{{this.host}}/{{this.port}}/0000" class="list-group-item active">
+      <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+    <h4 class="list-group-item-heading">{{this.friendlyName}}</h4>
+    <p class="list-group-item-text">{{this.host}}:{{this.port}}</p>
+    <span class="badge">{{this.manufacturer}}</span>{{this.modelName}}
+  </a>
+  {{else}}
+  <li class="list-group-item">No devices detected...</li>
+  {{/each}}
+</ul>

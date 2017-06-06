@@ -1,0 +1,25 @@
+body {
+}
+
+.progress {
+  display: none;
+}
+.alert{
+  display: none;
+}
+dl{
+  display: none;
+}
+#btn_findtv_again
+{
+  display:none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}

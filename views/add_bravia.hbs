@@ -1,0 +1,15 @@
+<h1>Bravia</h1>
+
+{{#if error}}
+  <h2>Can't add TV</h2>
+  <p>{{error}}</p>
+  <p>Please add you Psk:</p>
+  <form class="navbar-form navbar-left" role="search" action="/bravia/add/{{hostname}}/{{port}}/{{psk}}">
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="{{psk}}" name="pski">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+{{else}}
+  <h2>TV added!</h2>
+{{/if}}

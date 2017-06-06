@@ -1,0 +1,18 @@
+<html>
+{{>head}}
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        {{>nav}} {{{ body }}}
+      </div>
+    </div>
+    {{>footer}}
+  </div>
+  {{#each scripts}}
+  <script src="/js/{{this}}"></script>
+  {{/each}}
+</body>
+
+</html>

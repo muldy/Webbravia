@@ -1,0 +1,18 @@
+<ul class="list-group text-left">
+  {{#each devices}}
+  <li class="list-group-item active">
+    <span class="badge">{{this.manufacturer}}</span>
+    <h4 class="list-group-item-heading">{{this.friendlyName}}</h4>
+    <p class="list-group-item-text">{{this.host}}:{{this.port}}</p>
+    <div id="pindiv" class="input-group">
+      <input disabled type="number" name="pin" min="4" max="4" class="form-control" placeholder="0000">
+      <span class="input-group-btn">
+    <button class="subPin btn btn-default" type="submit">Ask for pin...</button>
+  </span>
+    </div>
+    <!-- /input-group -->
+  </li>
+  {{else}}
+  <li class="list-group-item">No devices detected...</li>
+  {{/each}}
+</ul>
