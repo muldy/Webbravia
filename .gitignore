@@ -1,0 +1,4 @@
+*.swp
+.node-persist/
+node_modules
+.bowerrc
